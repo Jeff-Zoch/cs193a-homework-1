@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jeff.assignment1tipcalculator.MainActivity"
+    android:weightSum="1">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/EnterCostInput"
+        android:hint="Enter Cost:"
+        android:layout_weight="0.00"
+        android:clickable="false" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="15%"
+        android:id="@+id/fifteenButton"
+        android:onClick="setPercent"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="setPercent"
+        android:id="@+id/eighteenButton"
+        android:text="18%" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="setPercent"
+        android:id="@+id/twentyButton"
+        android:text="20%" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="Enter Custom Tip:"
+        android:id="@+id/customTip"
+        android:layout_weight="0.08"
+        android:layout_marginBottom="50dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="tip"
+        android:id="@+id/calculateButton"
+        android:text="Calculate" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tip:"
+        android:layout_gravity="bottom"
+        android:id="@+id/tipTotalText"
+        android:layout_weight="0.26" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TotalCostText"
+        android:text="Total:"
+        android:layout_weight="0.25" />
+</LinearLayout>
